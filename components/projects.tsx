@@ -13,6 +13,12 @@ export default function Projects() {
       tech: ["Python", "AI/ML", "Voice Synthesis", "Real-time Processing"],
     },
     {
+      title: "F1 Win Probability Predictor",
+      description:
+        "A machine learning model that predicts Formula 1 win probabilities using historical race data from FastF1 (2021–2024) and the confirmed 2025 driver lineup. The backend trains an XGBoost model on per-driver race features, while an interactive React frontend lets users enter any season and round to see the top 5 most likely winners.",
+      tech: ["Python", "XGBoost", "FastAPI", "React", "Vite", "scikit-learn"],
+    },
+    {
       title: "Cardiovascular Disease Analysis",
       description:
         "Statistical modeling and data analysis on CHD risks for post-menopausal women on HRT using A/B testing, hypothesis testing, and bootstrapping.",

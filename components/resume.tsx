@@ -9,12 +9,13 @@ export default function Resume() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Resume Preview */}
-          <div className="md:col-span-2 bg-(--card) rounded-xl p-12 shadow-sm border border-(--border-color) min-h-96 flex items-center justify-center">
-            <div className="text-center">
-              <div className="text-6xl font-bold text-(--accent-primary) mb-4">Arav Sarma</div>
-              <p className="text-lg text-(--muted-text) mb-8">Computer Science Student & Developer</p>
-              <p className="text-sm text-(--muted-text)">Resume Preview • San Jose, CA</p>
-            </div>
+          <div className="md:col-span-2 rounded-xl overflow-hidden shadow-sm border border-(--border-color)" style={{ minHeight: "600px" }}>
+            <iframe
+              src="/Arav_resume.pdf"
+              className="w-full h-full"
+              style={{ minHeight: "600px" }}
+              title="Arav Sarma Resume"
+            />
           </div>
 
           {/* Download Section */}
