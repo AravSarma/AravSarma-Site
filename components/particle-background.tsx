@@ -77,7 +77,7 @@ export default function ParticleBackground() {
       const x = ((e.clientX - rect.left) / rect.width) * 2 - 1
       const y = -((e.clientY - rect.top) / rect.height) * 2 + 1
 
-      raycaster.setFromCamera({ x, y }, camera)
+      raycaster.setFromCamera(new THREE.Vector2(x, y), camera)
       const intersectPoint = new THREE.Vector3()
       raycaster.ray.intersectPlane(plane, intersectPoint)
       mouse.x = intersectPoint.x
