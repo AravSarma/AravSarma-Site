@@ -224,6 +224,18 @@
     transform: translateY(-4px);
   }
 
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    will-change: opacity, transform;
+  }
+
+  .reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
   .skill-tag {
     @apply px-4 py-2 rounded-full text-sm font-medium transition-all;
     background-color: rgba(75, 59, 110, 0.1);
@@ -234,5 +246,16 @@
   .skill-tag:hover {
     @apply shadow-md;
     background-color: rgba(75, 59, 110, 0.15);
+  }
+}
+
+@keyframes orb-pulse {
+  0%, 100% {
+    background-color: #86c057;
+    box-shadow: 0 0 6px 2px #86c05788;
+  }
+  50% {
+    background-color: #6aad3e;
+    box-shadow: 0 0 12px 5px #6aad3e99;
   }
 }

@@ -1,3 +1,5 @@
+import ScrollReveal from "@/components/scroll-reveal"
+
 export default function Experience() {
   const experiences = [
     {
@@ -37,29 +39,33 @@ export default function Experience() {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white bg-opacity-30">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-(--foreground) mb-12 text-balance">Experience</h2>
+        <ScrollReveal>
+          <h2 className="text-4xl font-bold text-(--foreground) mb-12 text-balance">Experience</h2>
+        </ScrollReveal>
 
         <div className="space-y-8">
           {experiences.map((exp, index) => (
-            <div key={index} className="bg-(--card) rounded-xl p-8 shadow-sm border border-(--border-color) card-hover">
-              <div className="flex items-start justify-between mb-4">
-                <div>
-                  <h3 className="text-xl font-bold text-(--accent-primary)">{exp.role}</h3>
-                  <p className="text-lg font-medium text-(--foreground)">{exp.company}</p>
-                  <p className="text-sm text-(--muted-text)">{exp.location}</p>
+            <ScrollReveal key={index} delay={index * 120}>
+              <div className="bg-(--card) rounded-xl p-8 shadow-sm border border-(--border-color) card-hover">
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <h3 className="text-xl font-bold text-(--accent-primary)">{exp.role}</h3>
+                    <p className="text-lg font-medium text-(--foreground)">{exp.company}</p>
+                    <p className="text-sm text-(--muted-text)">{exp.location}</p>
+                  </div>
+                  <span className="text-sm font-medium text-(--muted-text) whitespace-nowrap ml-4">{exp.dates}</span>
                 </div>
-                <span className="text-sm font-medium text-(--muted-text) whitespace-nowrap ml-4">{exp.dates}</span>
-              </div>
 
-              <ul className="space-y-2">
-                {exp.highlights.map((highlight, idx) => (
-                  <li key={idx} className="text-(--muted-text) flex gap-3">
-                    <span className="text-(--accent-primary) font-bold">•</span>
-                    <span>{highlight}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+                <ul className="space-y-2">
+                  {exp.highlights.map((highlight, idx) => (
+                    <li key={idx} className="text-(--muted-text) flex gap-3">
+                      <span className="text-(--accent-primary) font-bold">•</span>
+                      <span>{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>

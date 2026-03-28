@@ -1,11 +1,13 @@
 import Image from "next/image"
 import { Github, Linkedin } from "lucide-react"
 import profilePic from "@/public/arav-profile.jpg"
+import ParticleBackground from "@/components/particle-background"
 
 export default function Hero() {
   return (
-    <section className="min-h-[calc(100vh-64px)] flex items-center py-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto w-full">
+    <section className="relative min-h-[calc(100vh-64px)] flex items-center py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <ParticleBackground />
+      <div className="relative z-10 max-w-6xl mx-auto w-full">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Column */}
           <div className="space-y-6">
@@ -72,3 +74,4 @@ export default function Hero() {
     </section>
   )
 }
+

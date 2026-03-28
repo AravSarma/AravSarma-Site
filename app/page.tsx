@@ -7,6 +7,7 @@ import Projects from "@/components/projects"
 import Resume from "@/components/resume"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
+import ScrollReveal from "@/components/scroll-reveal"
 
 export default function Home() {
   return (
@@ -20,7 +21,9 @@ export default function Home() {
           <About />
         </section>
         <section id="skills">
-          <Skills />
+          <ScrollReveal delay={50}>
+            <Skills />
+          </ScrollReveal>
         </section>
         <section id="experience">
           <Experience />
@@ -29,10 +32,14 @@ export default function Home() {
           <Projects />
         </section>
         <section id="resume">
-          <Resume />
+          <ScrollReveal delay={50}>
+            <Resume />
+          </ScrollReveal>
         </section>
         <section id="contact">
-          <Contact />
+          <ScrollReveal delay={50}>
+            <Contact />
+          </ScrollReveal>
         </section>
       </main>
       <Footer />
