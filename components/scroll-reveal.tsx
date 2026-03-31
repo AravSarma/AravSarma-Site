@@ -15,13 +15,13 @@ export default function ScrollReveal({ children, className = "", delay = 0 }: Sc
     const el = ref.current
     if (!el) return
 
-    el.style.transitionDelay = `${delay}ms`
-
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
+          el.style.transitionDelay = `${delay}ms`
           el.classList.add("revealed")
         } else {
+          el.style.transitionDelay = "0ms"
           el.classList.remove("revealed")
         }
       },
