@@ -11,7 +11,7 @@ export default function Resume() {
           {/* Resume Preview */}
           <div className="md:col-span-2 rounded-xl overflow-hidden shadow-sm border border-(--border-color)" style={{ minHeight: "600px" }}>
             <iframe
-              src="/Arav_resume.pdf"
+              src="/Arav-Sarma_Resume.pdf"
               className="w-full h-full"
               style={{ minHeight: "600px" }}
               title="Arav Sarma Resume"
