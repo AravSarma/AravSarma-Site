@@ -13,6 +13,7 @@ export default function Resume() {
             <iframe
               src="/Arav-Sarma_Resume.pdf"
               className="w-full h-full"
+              
               style={{ minHeight: "600px" }}
               title="Arav Sarma Resume"
             />
