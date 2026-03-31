@@ -3,6 +3,25 @@ import ScrollReveal from "@/components/scroll-reveal"
 export default function Projects() {
   const projects = [
     {
+      title: "Financial Portfolio Analyzer",
+      description:
+        "A full-stack application for tracking and analyzing personal investment portfolios. Visualizes asset allocation, historical performance, and risk metrics to help users make informed financial decisions.",
+      tech: ["React", "TypeScript", "Python", "FastAPI", "PostgreSQL"],
+      status: "in-progress",
+    },
+    {
+      title: "F1 Win Probability Predictor",
+      description:
+        "A machine learning model that predicts Formula 1 win probabilities using historical race data from FastF1 (2021–2024) and the confirmed 2025 driver lineup. The backend trains an XGBoost model on per-driver race features, while an interactive React frontend lets users enter any season and round to see the top 5 most likely winners.",
+      tech: ["Python", "XGBoost", "FastAPI", "React", "Vite", "scikit-learn"],
+    },
+    {
+      title: "Personal Portfolio Website",
+      description:
+        "This website — a personal portfolio built with Next.js and TypeScript, featuring a particle background, scroll reveal animations, dark/light theming, and a resume viewer. Designed and developed from scratch to showcase projects and experience.",
+      tech: ["Next.js", "TypeScript", "React", "Tailwind CSS"],
+    },
+    {
       title: "Think.ly",
       description:
         "A think-tank and employment platform connecting students with student-run businesses, enabling mentorship, networking, and career development opportunities.",
@@ -13,19 +32,6 @@ export default function Projects() {
       description:
         "A hackathon project featuring real-time AI-powered voice interaction with text and voice synthesis. Built an intuitive frontend and connected it to a dynamic AI backend.",
       tech: ["Python", "AI/ML", "Voice Synthesis", "Real-time Processing"],
-    },
-    {
-      title: "F1 Win Probability Predictor",
-      description:
-        "A machine learning model that predicts Formula 1 win probabilities using historical race data from FastF1 (2021–2024) and the confirmed 2025 driver lineup. The backend trains an XGBoost model on per-driver race features, while an interactive React frontend lets users enter any season and round to see the top 5 most likely winners.",
-      tech: ["Python", "XGBoost", "FastAPI", "React", "Vite", "scikit-learn"],
-    },
-    {
-      title: "Financial Portfolio Analyzer",
-      description:
-        "A full-stack application for tracking and analyzing personal investment portfolios. Visualizes asset allocation, historical performance, and risk metrics to help users make informed financial decisions.",
-      tech: ["React", "TypeScript", "Python", "FastAPI", "PostgreSQL"],
-      status: "in-progress",
     },
     {
       title: "Cardiovascular Disease Analysis",
