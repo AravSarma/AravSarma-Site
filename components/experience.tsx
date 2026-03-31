@@ -37,23 +37,23 @@ export default function Experience() {
   ]
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white bg-opacity-30">
+    <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 bg-white bg-opacity-30">
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
-          <h2 className="text-4xl font-bold text-(--foreground) mb-12 text-balance">Experience</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-(--foreground) mb-8 md:mb-12 text-balance">Experience</h2>
         </ScrollReveal>
 
-        <div className="space-y-8">
+        <div className="space-y-6 md:space-y-8">
           {experiences.map((exp, index) => (
             <ScrollReveal key={index} delay={index * 120}>
-              <div className="bg-(--card) rounded-xl p-8 shadow-sm border border-(--border-color) card-hover">
-                <div className="flex items-start justify-between mb-4">
+              <div className="bg-(--card) rounded-xl p-5 md:p-8 shadow-sm border border-(--border-color) card-hover">
+                <div className="flex flex-col gap-1 md:flex-row md:items-start md:justify-between mb-4">
                   <div>
-                    <h3 className="text-xl font-bold text-(--accent-primary)">{exp.role}</h3>
-                    <p className="text-lg font-medium text-(--foreground)">{exp.company}</p>
+                    <h3 className="text-lg md:text-xl font-bold text-(--accent-primary)">{exp.role}</h3>
+                    <p className="text-base md:text-lg font-medium text-(--foreground)">{exp.company}</p>
                     <p className="text-sm text-(--muted-text)">{exp.location}</p>
                   </div>
-                  <span className="text-sm font-medium text-(--muted-text) whitespace-nowrap ml-4">{exp.dates}</span>
+                  <span className="text-sm font-medium text-(--muted-text) md:whitespace-nowrap md:ml-4">{exp.dates}</span>
                 </div>
 
                 <ul className="space-y-2">

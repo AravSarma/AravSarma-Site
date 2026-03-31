@@ -67,12 +67,12 @@ export default function Navigation() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden pb-4 flex flex-col gap-2">
+          <div className="md:hidden pb-4 flex flex-col">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className={`nav-link block py-2 ${activeSection === link.href.slice(1) ? "active" : ""}`}
+                className={`nav-link block py-3 text-base border-b border-(--border-color) last:border-0 ${activeSection === link.href.slice(1) ? "active" : ""}`}
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}

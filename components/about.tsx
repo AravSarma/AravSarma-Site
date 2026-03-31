@@ -2,10 +2,10 @@ import ScrollReveal from "@/components/scroll-reveal"
 
 export default function About() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white bg-opacity-30">
+    <section className="py-12 md:py-20 px-4 sm:px-6 lg:px-8 bg-white bg-opacity-30">
       <div className="max-w-6xl mx-auto">
         <ScrollReveal>
-          <h2 className="text-4xl font-bold text-(--foreground) mb-12 text-balance">About Me</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-(--foreground) mb-8 md:mb-12 text-balance">About Me</h2>
         </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
