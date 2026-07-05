@@ -5,7 +5,7 @@ export default function Projects() {
     {
       title: "PortFlo",
       description:
-        "Supply chain risk intelligence dashboard built at QuackHacks 2026. Won 1st place in the Base44 track and top 5 of 71 teams. Combines public data sources (NOAA, NASA, USGS, World Bank) with an interactive Mapbox globe and Gemini-powered AI briefings to monitor global risk across critical materials, trade routes, ports, and suppliers. Features a custom shortage-risk scoring algorithm combining supply concentration (HHI), geopolitical risk, and price momentum.",
+        "Supply chain risk intelligence dashboard built at QuackHacks 2026. Won 1st place in the Base44 track and top 5 of 71 teams. Combines public data sources (NOAA, NASA, USGS, World Bank) with an interactive Mapbox globe and Gemini-powered AI briefings to monitor global risk across critical materials, trade routes, ports, and suppliers. Features a custom shortage-risk scoring algorithm combining supply concentration (HHI), geopolitical risk, and price momentum. Demo at portflo.org",
       tech: ["Python", "FastAPI", "React", "Vite", "Mapbox GL", "Gemini API"],
       status: "in-progress",
     },
