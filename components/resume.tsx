@@ -11,7 +11,7 @@ export default function Resume() {
         <div className="hidden md:grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2 rounded-xl overflow-hidden shadow-sm border border-(--border-color)" style={{ minHeight: "600px" }}>
             <iframe
-              src="/Arav-Sarma_Resume.pdf"
+              src="/AravSarma_Resume.pdf"
               className="w-full h-full"
               style={{ minHeight: "600px" }}
               title="Arav Sarma Resume"
@@ -20,7 +20,7 @@ export default function Resume() {
           <div className="flex flex-col justify-center gap-6">
             <div>
               <h3 className="text-sm font-bold text-(--accent-primary) uppercase tracking-wide mb-2">Get My Resume</h3>
-              <Link href="/Arav-Sarma_Resume.pdf" className="btn-primary flex items-center justify-center gap-2 w-full" download>
+              <Link href="/AravSarma_Resume.pdf" className="btn-primary flex items-center justify-center gap-2 w-full" download>
                 <Download size={20} />
                 Download PDF
               </Link>
@@ -40,11 +40,11 @@ export default function Resume() {
               <p className="text-sm text-(--muted-text)">Last updated Jan 2026.</p>
             </div>
             <div className="flex flex-col gap-3 w-full max-w-xs">
-              <Link href="/Arav-Sarma_Resume.pdf" className="btn-primary flex items-center justify-center gap-2 w-full">
+              <Link href="/AravSarma_Resume.pdf" className="btn-primary flex items-center justify-center gap-2 w-full">
                 <FileText size={20} />
                 View Resume
               </Link>
-              <Link href="/Arav-Sarma_Resume.pdf" className="flex items-center justify-center gap-2 w-full px-6 py-3 rounded-lg border border-(--border-color) text-(--foreground) text-sm font-medium hover:bg-(--card) transition-colors" download>
+              <Link href="/AravSarma_Resume.pdf" className="flex items-center justify-center gap-2 w-full px-6 py-3 rounded-lg border border-(--border-color) text-(--foreground) text-sm font-medium hover:bg-(--card) transition-colors" download>
                 <Download size={18} />
                 Download PDF
               </Link>

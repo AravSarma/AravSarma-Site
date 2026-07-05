@@ -3,11 +3,17 @@ import ScrollReveal from "@/components/scroll-reveal"
 export default function Projects() {
   const projects = [
     {
+      title: "PortFlo",
+      description:
+        "Supply chain risk intelligence dashboard built at QuackHacks 2026. Won 1st place in the Base44 track and top 5 of 71 teams. Combines public data sources (NOAA, NASA, USGS, World Bank) with an interactive Mapbox globe and Gemini-powered AI briefings to monitor global risk across critical materials, trade routes, ports, and suppliers. Features a custom shortage-risk scoring algorithm combining supply concentration (HHI), geopolitical risk, and price momentum.",
+      tech: ["Python", "FastAPI", "React", "Vite", "Mapbox GL", "Gemini API"],
+      status: "in-progress",
+    },
+    {
       title: "Financial Portfolio Analyzer",
       description:
         "A full-stack application for tracking and analyzing personal investment portfolios. Visualizes asset allocation, historical performance, and risk metrics to help users make informed financial decisions.",
       tech: ["React", "TypeScript", "Python", "FastAPI", "PostgreSQL"],
-      status: "in-progress",
     },
     {
       title: "F1 Win Probability Predictor",
