@@ -25,7 +25,7 @@ export default function Resume() {
                 Download PDF
               </Link>
             </div>
-            <p className="text-xs text-(--muted-text)">Last updated: Jan 2026</p>
+            <p className="text-xs text-(--muted-text)">Last updated: July 2026</p>
           </div>
         </div>
 
@@ -37,7 +37,7 @@ export default function Resume() {
             </div>
             <div>
               <h3 className="text-lg font-bold text-(--foreground) mb-2">My Resume</h3>
-              <p className="text-sm text-(--muted-text)">Last updated Jan 2026.</p>
+              <p className="text-sm text-(--muted-text)">Last updated July 2026.</p>
             </div>
             <div className="flex flex-col gap-3 w-full max-w-xs">
               <Link href="/AravSarma_Resume.pdf" className="btn-primary flex items-center justify-center gap-2 w-full">
